@@ -13,7 +13,7 @@ export default {
 
       },
       backgroundImage: {
-        'banner': "url('/src/assets/vv.png')",
+        'banner': "url('/src/assets/vv1.png')",
         'mBanner': "url('/src/assets/mobile-banner.png')",
         'menu': "url('/src/assets/Rectangle 9.png')",
         'test': "url('/src/assets/Group 1.png')",

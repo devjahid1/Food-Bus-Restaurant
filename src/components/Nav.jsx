@@ -4,7 +4,7 @@ import navIcon from '../assets/nav-icon.png';
 
 const Nav = () => {
     return (
-        <div className="navbar">
+        <div className="navbar w-full max-w-[1440px] mx-auto ">
   <div className="navbar-center">
     <div className="dropdown">
       <div tabIndex={0} role="button" className=" mt-10 flex gap-36 lg:hidden">
@@ -19,6 +19,7 @@ const Nav = () => {
         <NavLink to='/menu'>Menu</NavLink>
         <NavLink to='/reservation'>Reservation</NavLink>
         <NavLink to='/service'>Services</NavLink>
+        <NavLink to='/gallery'>Gallery</NavLink>
         <NavLink to='/testimonials'>Management</NavLink>
       </ul>
     </div>
@@ -29,8 +30,9 @@ const Nav = () => {
       <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/menu'>Menu</NavLink></li>
                 <li><NavLink to='/reservation'>Reservation</NavLink></li>
-            <li className="mr-12 ml-12"><Link to='/' className=""><img src={logo} alt="logo" /></Link></li>
+            <li className=""><Link to='/' className=""><img src={logo} alt="logo" /></Link></li>
         <li><NavLink to='/service'>Services</NavLink></li>
+        <NavLink to='/gallery'>Gallery</NavLink>
         <li><NavLink to='/testimonial'>Management</NavLink></li>
     </ul>
   </div>
