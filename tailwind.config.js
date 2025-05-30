@@ -21,7 +21,7 @@ export default {
         'm1': "url('/src/assets/1.png')",
         'm2': "url('/src/assets/2.png')",
         'm3': "url('/src/assets/3.png')",
-        'm4': "url('/src/assets/4.png')",
+        'm4': "url('/src/assets/4.png')"
       },
     },
   },
