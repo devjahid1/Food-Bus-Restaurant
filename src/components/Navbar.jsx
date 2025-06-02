@@ -2,11 +2,7 @@ import Nav from "./Nav";
 
 const Navbar = () => {
   return (
-<<<<<<< HEAD
-    <div className="relative w-full max-w-screen-[1440px] mx-auto h-[1000px] bg-banner bg-cover bg-center bg-no-repeat">
-=======
     <div className="relative w-full max-w-screen-[1440px] mx-auto h-[1000px] bg-banner bg-cover bg-center bg-no-repeat bg-fixed">
->>>>>>> f0b15d8 (about page done)
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-gray/90 z-0"></div>
 
