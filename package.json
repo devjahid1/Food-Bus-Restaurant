@@ -7,8 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+<<<<<<< HEAD
     "preview": "vite preview",
     "deploy": "wrangler publish"
+=======
+    "preview": "vite preview"
+>>>>>>> f0b15d8 (about page done)
   },
   "dependencies": {
     "localforage": "^1.10.0",
@@ -16,9 +20,14 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+<<<<<<< HEAD
     "react-image-lightbox": "^5.1.4",
     "react-router-dom": "^7.6.1",
     "sort-by": "^0.0.2"
+=======
+    "react-router-dom": "^7.6.1",
+    "sort-by": "^1.2.0"
+>>>>>>> f0b15d8 (about page done)
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
@@ -26,12 +35,20 @@
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
     "autoprefixer": "^10.4.21",
+<<<<<<< HEAD
     "daisyui": "^5.0.40",
+=======
+    "daisyui": "^5.0.43",
+>>>>>>> f0b15d8 (about page done)
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+<<<<<<< HEAD
     "postcss": "^8.5.3",
+=======
+    "postcss": "^8.5.4",
+>>>>>>> f0b15d8 (about page done)
     "tailwindcss": "^3.4.17",
     "vite": "^6.3.5"
   }

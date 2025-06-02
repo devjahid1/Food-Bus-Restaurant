@@ -6,7 +6,11 @@ import logo from '../assets/Mask group.png';
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
+<<<<<<< HEAD
         <div className="footer sm:footer-horizontal text-base-content bg-footerImg w-full max-w-[1440px] mx-auto p-10  text-white h-[850px] lg:h-[500px] bg-cover bg-no-repeat bg-center lg:flex lg:justify-around lg:items-center">
+=======
+        <div className="footer sm:footer-horizontal text-base-content bg-footerImg max-w-screen-[1440px] mx-auto p-10  text-white h-[850px] lg:h-[500px] bg-cover bg-no-repeat bg-center lg:flex lg:justify-around lg:items-center">
+>>>>>>> f0b15d8 (about page done)
   <aside>
 
     <img className='mb-10' src={logo} alt="" />
