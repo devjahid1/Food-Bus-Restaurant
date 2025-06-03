@@ -17,10 +17,27 @@ const GallaryGrid = () => {
     ];
 
     const [lightboxOpen, setLightboxOpen] = useState(false);
-    const [currentImage, setCurrentImage] = useState('');
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [showAll, setShowAll] = useState(false);
 
     const displayedImages = showAll ? images : images.slice(0, 6);
+
+    const openLightbox = (index) => {
+        setCurrentIndex(index);
+        setLightboxOpen(true);
+    };
+
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    };
+
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+    };
 
     return (
         <div className='mb-28'>
@@ -31,7 +48,6 @@ const GallaryGrid = () => {
                 </h3>
             </div>
 
-
             <div className="w-3/4 mx-auto columns-1 sm:columns-2 lg:columns-4 gap-4 p-6 space-y-4">
                 {displayedImages.map((src, index) => (
                     <img
@@ -39,14 +55,10 @@ const GallaryGrid = () => {
                         src={src}
                         alt={`gallery-${index}`}
                         className="w-full mb-4 rounded-lg shadow-md break-inside-avoid cursor-pointer hover:scale-105 transition-transform duration-300"
-                        onClick={() => {
-                            setCurrentImage(src);
-                            setLightboxOpen(true);
-                        }}
+                        onClick={() => openLightbox(index)}
                     />
                 ))}
             </div>
-
 
             <div className="text-center mt-6">
                 <button
@@ -57,22 +69,38 @@ const GallaryGrid = () => {
                 </button>
             </div>
 
-
             {lightboxOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
-                    <div className="relative max-w-[95vw] max-h-[95vh]">
-                        <button
-                            onClick={() => setLightboxOpen(false)}
-                            className="absolute top-2 right-2 text-white text-4xl font-bold z-10"
-                        >
-                            &times;
-                        </button>
-                        <img
-                            src={currentImage}
-                            alt="Zoomed"
-                            className="w-full h-auto max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
-                        />
-                    </div>
+                    {/* Close button */}
+                    <button
+                        onClick={() => setLightboxOpen(false)}
+                        className="absolute top-4 right-4 text-white text-4xl font-bold z-10"
+                    >
+                        &times;
+                    </button>
+
+                    {/* Left arrow */}
+                    <button
+                        onClick={prevImage}
+                        className="absolute left-4 text-white text-5xl font-bold z-10 hover:scale-125 transition"
+                    >
+                        &#8592;
+                    </button>
+
+                    {/* Image */}
+                    <img
+                        src={images[currentIndex]}
+                        alt="Zoomed"
+                        className="w-full h-auto max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
+                    />
+
+                    {/* Right arrow */}
+                    <button
+                        onClick={nextImage}
+                        className="absolute right-4 text-white text-5xl font-bold z-10 hover:scale-125 transition"
+                    >
+                        &#8594;
+                    </button>
                 </div>
             )}
         </div>

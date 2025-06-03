@@ -21,7 +21,7 @@ const Footer = () => {
 
     <div className='flex items-center gap-4 font-pacifico text-[24px] mb-10'>
         <img src={icon} alt="" />
-        <h className="text-white">Get In Touch</h>
+        <h1 className="text-white">Get In Touch</h1>
     </div>
 
     <div className='ml-5 flex flex-col gap-5'>

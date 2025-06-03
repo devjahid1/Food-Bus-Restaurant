@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
     return (
-        <div className="menu-container w-full max-w-[1440px] h-[868px] mx-auto mt-0 lg:mt-[140px] mb-0 lg:mb-[140px] bg-gray-100 bg-footerImg bg-no-repeat bg-cover bg-center">
+        <div className="menu-container w-full max-w-screen[1440px] h-[868px] mx-auto mt-0 lg:mt-[140px] mb-0 lg:mb-[140px] bg-gray-100 bg-footerImg bg-no-repeat bg-cover bg-center">
 
             <div className='w-full max-w-[1200px] mx-auto text-center flex '>
 

@@ -3,7 +3,7 @@ import React from "react";
 const AboutText = () => {
   return (
     <div className="mt-[140px] mb-[140px] px-14">
-      <h1 className="lg:text-[40px] px-5 text-center font-pacifico">
+      <h1 className=" text-[30px] lg:text-[40px] px-5 text-center font-pacifico">
         Food Bus Restaurant and Party Center – <span className="text-[#E30814]"> Where Flavorful Cuisine Meets
         Memorable Celebrations</span>
       </h1>
