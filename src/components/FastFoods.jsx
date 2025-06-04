@@ -4,7 +4,7 @@ const FastFoods = ({fastFoodItem}) => {
     const { img, name, totalPiece, price } = fastFoodItem;
 
     return (
-        <div className=" w-full rounded-lg border p-4">
+        <div className=" w-full rounded-lg p-4">
             <img
                 src={img}
                 alt={name}
