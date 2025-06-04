@@ -37,6 +37,7 @@ const router = createBrowserRouter([
           {
             path: "fast_food",
             element: <Fastfood />,
+            loader: () => fetch("/fastFood.json"),
           },
           {
             path: "rice_dish",
