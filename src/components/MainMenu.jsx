@@ -6,12 +6,12 @@ import { NavLink } from 'react-router-dom';
 
 const MainMenu = () => {
     return (
-        <div className='w-full max-w-screen-[1440px] flex flex-col items-center gap-9 justify-center pl-[100px]'>
+        <div className='w-full max-w-screen-[1440px] mx-auto flex flex-col items-center gap-20 justify-center'>
             {/* menu1 */}
-            <NavLink to="main_dishes" className="mb-[20px]">
-                <div className="relative w-[574px] h-[235px] overflow-hidden rounded-xl">
+            <NavLink to="main_dishes" className="w-full max-w-screen-[374px] h-[160px]">
+                <div className="relative overflow-hidden">
                     <img
-                        className='w-full h-full object-cover transition-transform duration-300 hover:scale-105'
+                        className=' w-full h-full object-cover transition-transform duration-300 hover:scale-105 rounded-xl'
                         src={menu1}
                         alt="Main Dishes"
                     />
@@ -22,10 +22,10 @@ const MainMenu = () => {
             </NavLink>
 
             {/* menu2 */}
-            <NavLink to="fast_food" className="mb-[20px]">
-                <div className="relative w-[574px] h-[235px] overflow-hidden rounded-xl">
+            <NavLink to="fast_food" className="w-full max-w-screen-[374px] h-[160px]">
+                <div className="relative overflow-hidden">
                     <img
-                        className='w-full h-full object-cover transition-transform duration-300 hover:scale-105'
+                        className=' w-full h-full object-cover transition-transform duration-300 hover:scale-105 rounded-xl'
                         src={menu4}
                         alt="Fast Food"
                     />
@@ -36,10 +36,10 @@ const MainMenu = () => {
             </NavLink>
 
             {/* menu3 */}
-            <NavLink to="rice_dish" className="mb-[20px]">
-                <div className="relative w-[574px] h-[235px] overflow-hidden rounded-xl">
+            <NavLink to="rice_dish" className="w-full max-w-screen-[374px] h-[160px]">
+                <div className="relative overflow-hidden">
                     <img
-                        className='w-full h-full object-cover transition-transform duration-300 hover:scale-105'
+                        className=' w-full h-full object-cover transition-transform duration-300 hover:scale-105 rounded-xl'
                         src={menu3}
                         alt="Rice Dish"
                     />
@@ -50,14 +50,14 @@ const MainMenu = () => {
             </NavLink>
 
             {/* menu4 */}
-            <NavLink to="thai" className="mb-[20px]">
-                <div className="relative w-[574px] h-[235px] overflow-hidden rounded-xl">
+            <NavLink to="thai" className="w-full max-w-screen-[374px] h-[160px]">
+                <div className="relative overflow-hidden">
                     <img
-                        className='w-full h-full object-cover transition-transform duration-300 hover:scale-105'
+                        className=' w-full h-full object-cover transition-transform duration-300 hover:scale-105 rounded-xl'
                         src={menu2}
                         alt="Thai & Chinese"
                     />
-                    <h1 className='absolute bottom-4 left-1/2 transform -translate-x-1/2 text-3xl font-pacifico text-[#E9C94B]'>
+                    <h1 className='absolute pl-8 bottom-4 left-1/2 transform -translate-x-1/2 text-3xl font-pacifico text-[#E9C94B]'>
                         Thai & Chinese
                     </h1>
                 </div>

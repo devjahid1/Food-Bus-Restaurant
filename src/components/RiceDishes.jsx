@@ -1,7 +1,5 @@
-import React from 'react';
-
-const FastFoods = ({fastFoodItem}) => {
-    const { img, name, totalPiece, price } = fastFoodItem;
+const RiceDishes = ({riceItem}) => {
+    const { img, name, totalPiece, price } = riceItem;
 
     return (
         <div className="w-full max-w-[1440px] rounded-lg pb-4 px-2">
@@ -17,4 +15,5 @@ const FastFoods = ({fastFoodItem}) => {
     );
 };
 
-export default FastFoods;
+
+export default RiceDishes;

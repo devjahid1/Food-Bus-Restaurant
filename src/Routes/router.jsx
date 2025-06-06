@@ -8,8 +8,8 @@ import Services from "../pages/Services";
 import Testimonials from "../pages/Testimonials";
 import Mdishes from "../components/Mdishes";
 import Fastfood from "../components/Fastfood";
-import Ricedish from "../components/Ricedish";
 import Thaidish from "../components/Thaidish";
+import RiceDish from "../components/RiceDish";
 
 const router = createBrowserRouter([
   {
@@ -41,11 +41,13 @@ const router = createBrowserRouter([
           },
           {
             path: "rice_dish",
-            element: <Ricedish />,
+            element: <RiceDish />,
+            loader: () => fetch("/riceDish.json",)
           },
           {
             path: "thai",
             element: <Thaidish />,
+            loader: ()=> fetch('/thai.json')
           },
         ],
       },

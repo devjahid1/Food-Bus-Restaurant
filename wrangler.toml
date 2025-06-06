@@ -1,6 +1,10 @@
 name = "food-bus"
-type = "javascript"
-
-account_id = "your-cloudflare-account-id"
+account_id = "74c1739a2a335c396dcbcd16482fb91d"
 workers_dev = true
-compatibility_date = "2025-05-30"
+compatibility_date = "2025-06-05"
+
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"

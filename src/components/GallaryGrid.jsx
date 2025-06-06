@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
 
+// Import images from assets folder
+import img1 from '../assets/Rectangle 19.png';
+import img2 from '../assets/Rectangle 23.png';
+import img3 from '../assets/Rectangle 27.png';
+import img4 from '../assets/Rectangle 20.png';
+import img5 from '../assets/Rectangle 24.png';
+import img6 from '../assets/Rectangle 28.png';
+import img7 from '../assets/Rectangle 21.png';
+import img8 from '../assets/Rectangle 25.png';
+import img9 from '../assets/Rectangle 29.png';
+import img10 from '../assets/Rectangle 22.png';
+import img11 from '../assets/Rectangle 26.png';
+import img12 from '../assets/Rectangle 30.png';
+
 const GallaryGrid = () => {
     const images = [
-        '/src/assets/Rectangle 19.png',
-        '/src/assets/Rectangle 23.png',
-        '/src/assets/Rectangle 27.png',
-        '/src/assets/Rectangle 20.png',
-        '/src/assets/Rectangle 24.png',
-        '/src/assets/Rectangle 28.png',
-        '/src/assets/Rectangle 21.png',
-        '/src/assets/Rectangle 25.png',
-        '/src/assets/Rectangle 29.png',
-        '/src/assets/Rectangle 22.png',
-        '/src/assets/Rectangle 26.png',
-        '/src/assets/Rectangle 30.png',
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img8,
+        img9,
+        img10,
+        img11,
+        img12,
     ];
 
     const [lightboxOpen, setLightboxOpen] = useState(false);

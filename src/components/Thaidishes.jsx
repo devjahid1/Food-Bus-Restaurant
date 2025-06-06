@@ -1,7 +1,7 @@
 import React from 'react';
 
-const FastFoods = ({fastFoodItem}) => {
-    const { img, name, totalPiece, price } = fastFoodItem;
+const Thaidishes = ({thaiItem}) => {
+    const { img, name, totalPiece, price } = thaiItem;
 
     return (
         <div className="w-full max-w-[1440px] rounded-lg pb-4 px-2">
@@ -17,4 +17,5 @@ const FastFoods = ({fastFoodItem}) => {
     );
 };
 
-export default FastFoods;
+
+export default Thaidishes;

@@ -7,14 +7,13 @@ const Nav = () => {
         <div className="navbar w-full max-w-[1440px] mx-auto ">
   <div className="navbar-center">
     <div className="dropdown">
-      <div tabIndex={0} role="button" className=" mt-10 flex gap-36 lg:hidden">
-                <li className="mr-12 ml-12"><Link to='/' className=""><img src={logo} alt="logo" /></Link></li>
+      <div tabIndex={0} role="button" className=" mt-10 f lg:hidden">
         <img src={navIcon} alt="navbar-icon" />
 
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] ml-48 mt-2 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-52 p-2 shadow">
         <NavLink to='/about'>About</NavLink>
         <NavLink to='/menu'>Menu</NavLink>
         <NavLink to='/reservation'>Reservation</NavLink>

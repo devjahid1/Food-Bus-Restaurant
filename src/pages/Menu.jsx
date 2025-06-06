@@ -8,22 +8,22 @@ import GallaryGrid from '../components/GallaryGrid';
 
 const Menu = () => {
     return (
-        <div className="">
+        <div className="mb-20">
             <MenuBanner />
             <MenuAbout />
 
-            <div className="w-full max-w-screen-[1440px] pl-[99px] flex items-center justify-center gap-28 mt-8">
-                <div className="w-1/4">
+            <div className="w-full max-w-[1440px] mx-auto mt-5 flex justify-center gap-6 px-4">
+                <div className="w-full max-w-[520px]">
                     <MainMenu />
                 </div>
-                <div className="w-3/4">
+                <div className="w-full max-w-[620px]">
                     <Outlet />
                 </div>
             </div>
 
             <About />
-            <Testimonials/>
-            <GallaryGrid/>
+            <Testimonials />
+            <GallaryGrid />
         </div>
     );
 };

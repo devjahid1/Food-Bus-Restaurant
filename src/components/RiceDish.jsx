@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
-import FastFoods from './FastFoods';
+import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import RiceDishes from "./RiceDishes";
 
-const Fastfood = () => {
+const RiceDish = () => {
     const data = useLoaderData();
     const [showAll, setShowAll] = useState(false);
 
-        // Show first 9 or all items
+    // Show first 9 or all items
     const visibleItems = showAll ? data : data.slice(0, 12);
-    
+
     return (
-        <div className="w-full max-w-[1000px]">
+        <div className="w-full max-w-[1440px] mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                 {visibleItems.map(item => (
-                    <FastFoods key={item.id} fastFoodItem={item} />
+                    <RiceDishes key={item.id} riceItem={item} />
                 ))}
             </div>
 
@@ -31,4 +31,5 @@ const Fastfood = () => {
     );
 };
 
-export default Fastfood;
+
+export default RiceDish;

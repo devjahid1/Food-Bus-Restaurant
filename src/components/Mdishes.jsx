@@ -10,8 +10,8 @@ const Mdishes = () => {
     const visibleItems = showAll ? data : data.slice(0, 12);
 
     return (
-        <div className="px-6 py-10 w-full max-w-[1000px]">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-1">
+        <div className="w-full max-w-[1440px] mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                 {visibleItems.map(item => (
                     <Maindishes key={item.id} mainItem={item} />
                 ))}
