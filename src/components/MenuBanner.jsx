@@ -16,16 +16,20 @@ const MainMenu = () => {
       <section className="relative w-full max-w-[1440px] mx-auto pt-32 lg:pt-20">
         <div className="w-full max-w-[1440px] mx-auto text-center text-white">
           <h1 className="text-[32px] lg:text-[60px] font-pacifico text-center">
-            <span className="text-[#FE2833]">Experience </span>the Taste, <br />{" "}
+            <span className="text-[#FE2833]">Experience </span>the Taste, <br />
             Enjoy the Ambience
           </h1>
           <p className="w-full max-w-[568px] mx-auto text-[20px] pt-[36px] font-plusjakarta text-center">
-            From mouthwatering meals to full-on party setups, <br /> Food Bus is your
-            one-stop destination for good times and great tastes
+            From mouthwatering meals to full-on party setups, <br />
+            Food Bus is your one-stop destination for good times and great tastes
           </p>
 
           <div className="py-[8px] px-[10px] pt-14 lg:pt-[61px]">
-            <NavLink to='/main_dishes' className="py-[25px] px-[20px] btn  bg-[#E30814] text-white border-none shadow-none hover:bg-white hover:text-black text-[20px] font-plusjakarta">
+            {/* ✅ Fixed NavLink path */}
+            <NavLink
+              to="/menu/main_dishes" state={{scrollToMenu:true}}
+              className="py-[25px] px-[20px] btn bg-[#E30814] text-white border-none shadow-none hover:bg-white hover:text-black text-[20px] font-plusjakarta"
+            >
               Check Menu
             </NavLink>
           </div>
