@@ -11,7 +11,6 @@ const Home = () => {
         <div className='w-full max-w-screen-[1440px] mx-auto'>
             <Navbar/>
             <Service/>
-            <Menu/>
             <About/>
             <Testimonials/>
             <GallaryGrid/>

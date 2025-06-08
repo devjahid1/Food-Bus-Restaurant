@@ -53,8 +53,6 @@ const Footer = () => {
     <div className='flex flex-col gap-5 ml-5 text-white'>
         <Link to='/about' className="link link-hover">About us</Link>
     <Link to='/menu' className="link link-hover">Our Menu</Link>
-    <Link to='/service' className="link link-hover">Our Services</Link>
-    <Link to='/testimonials' className="link link-hover">Testimonials</Link>
     <Link to='/gallery' className="link link-hover">Gallery</Link>
     </div>
   </nav>
