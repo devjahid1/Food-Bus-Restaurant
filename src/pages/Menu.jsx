@@ -12,11 +12,11 @@ const Menu = () => {
             <MenuBanner />
             <MenuAbout />
 
-            <div className="w-full max-w-[1440px] mx-auto mt-5 flex justify-center gap-6 px-4">
-                <div className="w-full max-w-[520px]">
+            <div className="w-full max-w-[1440px] mx-auto mt-5 lg:flex lg:justify-center lg:gap-6 lg:px-4">
+                <div className="w-full max-w-[520px] mx-auto mb-20 lg:mb-0">
                     <MainMenu />
                 </div>
-                <div className="w-full max-w-[620px]">
+                <div className="w-full max-w-[620px] mx-auto">
                     <Outlet />
                 </div>
             </div>

@@ -6,6 +6,7 @@ import logo from '../assets/Mask group.png';
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
+      <div className='bg-footerImg'>
         <div className="footer sm:footer-horizontal text-base-content bg-footerImg max-w-screen-[1440px] mx-auto p-10  text-white h-[850px] lg:h-[500px] bg-cover bg-no-repeat bg-center lg:flex lg:justify-around lg:items-center">
   <aside>
 
@@ -57,7 +58,19 @@ const Footer = () => {
     <Link to='/gallery' className="link link-hover">Gallery</Link>
     </div>
   </nav>
+</div>
 
+  <p className="text-sm text-white text-center pb-3">
+    &copy; {new Date().getFullYear()} All rights reserved. Developed by{" "}
+    <a
+      href="https://www.linkedin.com/in/mdjahidmiah/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-semibold hover:text-blue-400 transition-colors"
+    >
+      <span className='text-[#F84C4C]'>Jahid</span>
+    </a>
+  </p>
 </div>
     );
 };

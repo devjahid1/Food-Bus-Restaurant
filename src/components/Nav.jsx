@@ -26,13 +26,13 @@ const Nav = () => {
   
   <div className="navbar text-white hidden lg:flex lg:item-center w-full max-w-[1440px] mx-auto">
     <ul className="menu menu-horizontal text-[18px] py-[5px] lg:flex lg:items-center justify-around w-full">
-      <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/menu'>Menu</NavLink></li>
-                <li><NavLink to='/reservation'>Reservation</NavLink></li>
+      <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>About</NavLink></li>
+                <li><NavLink to='/menu'>Menu</NavLink></li>
             <li className=""><Link to='/' className=""><img src={logo} alt="logo" /></Link></li>
-        <li><NavLink to='/service'>Services</NavLink></li>
+        <li><NavLink to='/reservation'>Reservation</NavLink></li>
         <NavLink to='/gallery'>Gallery</NavLink>
-        <li><NavLink to='/testimonial'>Management</NavLink></li>
+        <li><NavLink to='/management'>Management</NavLink></li>
     </ul>
   </div>
 </div>

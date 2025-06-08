@@ -5,11 +5,11 @@ import About from "../pages/About";
 import Menu from "../pages/Menu";
 import Reservation from "../pages/Reservation";
 import Services from "../pages/Services";
-import Testimonials from "../pages/Testimonials";
 import Mdishes from "../components/Mdishes";
 import Fastfood from "../components/Fastfood";
 import Thaidish from "../components/Thaidish";
 import RiceDish from "../components/RiceDish";
+import Management from "../pages/Management";
 
 const router = createBrowserRouter([
   {
@@ -60,8 +60,8 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: "/Testimonials",
-        element: <Testimonials />,
+        path: "/management",
+        element: <Management/>,
       },
     ],
   },

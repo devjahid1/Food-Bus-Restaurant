@@ -1,6 +1,6 @@
 const MenuAbout = () => {
   return (
-    <div className="w-full max-w-screen-[1440px] mx-auto mt-3 lg:mt-[70px] mb-3 lg:mb-[70px] flex items-end justify-around gap-20">
+    <div className="w-full max-w-screen-[1440px] mx-auto mt-3 lg:mt-[70px] mb-3 lg:mb-[70px] text-start lg:text-start md:text-center sm:text-center lg:flex lg:items-end justify-around gap-20">
       {/* Text Section */}
       <div className="">
         <h1 className="text-[16px] font-semibold">OUR MENU</h1>
