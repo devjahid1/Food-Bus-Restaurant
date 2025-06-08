@@ -1,42 +1,55 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '../assets/Mask group.png';
-import navIcon from '../assets/nav-icon.png';
+import logo from "../assets/Mask group.png";
+import navIcon from "../assets/nav-icon.png";
 
 const Nav = () => {
-    return (
-        <div className="navbar w-full max-w-[1440px] mx-auto ">
-  <div className="navbar-center">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className=" mt-10 f lg:hidden">
-        <img src={navIcon} alt="navbar-icon" />
+  return (
+    <div className="navbar w-full max-w-[1440px] mx-auto px-4 py-4">
+      {/* Mobile View (Hamburger) */}
+      <div className="lg:hidden flex justify-between items-center w-full">
+        <Link to="/">
+          <img src={logo} alt="Logo" className="h-10" />
+        </Link>
 
+        {/* Hamburger Dropdown */}
+        <div className="dropdown dropdown-end">
+          <label tabIndex={0} className="cursor-pointer">
+            <img src={navIcon} alt="Menu" className="h-8 w-8" />
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[10] p-4 shadow bg-base-100 rounded-box w-52 text-black"
+          >
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/menu">Menu</NavLink></li>
+            <li><NavLink to="/reservation">Reservation</NavLink></li>
+            <li><NavLink to="/gallery">Gallery</NavLink></li>
+            <li><NavLink to="/management">Management</NavLink></li>
+          </ul>
+        </div>
       </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-52 p-2 shadow">
-        <NavLink to='/about'>About</NavLink>
-        <NavLink to='/menu'>Menu</NavLink>
-        <NavLink to='/reservation'>Reservation</NavLink>
-        <NavLink to='/service'>Services</NavLink>
-        <NavLink to='/gallery'>Gallery</NavLink>
-        <NavLink to='/testimonials'>Management</NavLink>
-      </ul>
+
+      {/* Desktop View */}
+      <div className="hidden lg:flex justify-between items-center w-full text-white">
+        <ul className="menu menu-horizontal px-1 text-[18px] w-full justify-around items-center">
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/menu">Menu</NavLink></li>
+
+          <li>
+            <Link to="/">
+              <img src={logo} alt="Logo" className="h-12" />
+            </Link>
+          </li>
+
+          <li><NavLink to="/reservation">Reservation</NavLink></li>
+          <li><NavLink to="/gallery">Gallery</NavLink></li>
+          <li><NavLink to="/management">Management</NavLink></li>
+        </ul>
+      </div>
     </div>
-  </div>
-  
-  <div className="navbar text-white hidden lg:flex lg:item-center w-full max-w-[1440px] mx-auto">
-    <ul className="menu menu-horizontal text-[18px] py-[5px] lg:flex lg:items-center justify-around w-full">
-      <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-                <li><NavLink to='/menu'>Menu</NavLink></li>
-            <li className=""><Link to='/' className=""><img src={logo} alt="logo" /></Link></li>
-        <li><NavLink to='/reservation'>Reservation</NavLink></li>
-        <NavLink to='/gallery'>Gallery</NavLink>
-        <li><NavLink to='/management'>Management</NavLink></li>
-    </ul>
-  </div>
-</div>
-    );
+  );
 };
 
 export default Nav;
