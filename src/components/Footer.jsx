@@ -27,7 +27,7 @@ const Footer = () => {
 
     <div className='ml-5 flex flex-col gap-5'>
 
-        <div className='flex items-center gap-4 mb-5 clas'>
+        <div className='flex items-center gap-4 mb-5'>
             <FaLocationDot className='text-gray-500 text-[20px]' />
             <h1 className='text-white'>East Mirabazar Dadapir Mazar Road, Sylhet</h1>
         </div>

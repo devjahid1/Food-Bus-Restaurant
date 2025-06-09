@@ -28,7 +28,7 @@ const Menu = () => {
 
       <div
         ref={menuRef}
-        className="w-full max-w-[1440px] mx-auto mt-5 lg:flex lg:justify-center lg:gap-6 lg:px-4"
+        className="w-full max-w-[1440px] mx-auto mt-5 lg:flex lg:justify-center "
       >
         <div className="w-full max-w-[520px] mx-auto mb-20 lg:mb-0">
           <MainMenu />

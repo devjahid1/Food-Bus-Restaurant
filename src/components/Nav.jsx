@@ -20,12 +20,24 @@ const Nav = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[10] p-4 shadow bg-base-100 rounded-box w-52 text-black"
           >
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/menu">Menu</NavLink></li>
-            <li><NavLink to="/reservation">Reservation</NavLink></li>
-            <li><NavLink to="/gallery">Gallery</NavLink></li>
-            <li><NavLink to="/management">Management</NavLink></li>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/menu">Menu</NavLink>
+            </li>
+            <li>
+              <NavLink to="/gallery">Gallery</NavLink>
+            </li>
+            <li>
+              <NavLink to="/management">Management</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
           </ul>
         </div>
       </div>
@@ -33,9 +45,15 @@ const Nav = () => {
       {/* Desktop View */}
       <div className="hidden lg:flex justify-between items-center w-full text-white">
         <ul className="menu menu-horizontal px-1 text-[18px] w-full justify-around items-center">
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/menu">Menu</NavLink></li>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/menu">Menu</NavLink>
+            </li>
 
           <li>
             <Link to="/">
@@ -43,9 +61,15 @@ const Nav = () => {
             </Link>
           </li>
 
-          <li><NavLink to="/reservation">Reservation</NavLink></li>
-          <li><NavLink to="/gallery">Gallery</NavLink></li>
-          <li><NavLink to="/management">Management</NavLink></li>
+            <li>
+              <NavLink to="/gallery">Gallery</NavLink>
+            </li>
+            <li>
+              <NavLink to="/management">Management</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
         </ul>
       </div>
     </div>

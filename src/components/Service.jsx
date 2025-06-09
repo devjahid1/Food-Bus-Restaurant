@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import dine from "../assets/Rectangle 10.png";
 import party from "../assets/image 28.png";
 
@@ -15,14 +15,14 @@ const Service = () => {
 
       <div className="w-full max-w-[1080px] mx-auto mt-[50px] lg:flex lg:items-center lg:justify-around mb-10 lg:gap-5">
         <div className="w-full max-w-[503px] h-[560px] mx-auto">
-          <Link to="/dine">
+          <NavLink to="/menu">
             <img className="rounded-lg" src={dine} alt="dine" />
             <h1 className="font-pacifico text-center text-[30px] pt-12">Dine in-Restaurant</h1>
-          </Link>
+          </NavLink>
         </div>
 
         <div className="w-full max-w-[503px] h-[560px] mx-auto">
-          <Link to="/party">
+          <Link to="/contact">
             <img className="rounded-lg" src={party} alt="dine" />
             <h1 className="font-pacifico text-center text-[30px] pt-12">Party Center</h1>
           </Link>

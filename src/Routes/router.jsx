@@ -3,7 +3,6 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Menu from "../pages/Menu";
-import Reservation from "../pages/Reservation";
 import Services from "../pages/Services";
 import Mdishes from "../components/Mdishes";
 import Fastfood from "../components/Fastfood";
@@ -52,10 +51,6 @@ const router = createBrowserRouter([
             loader: ()=> fetch('/thai.json')
           },
         ],
-      },
-      {
-        path: "/reservation",
-        element: <Reservation />,
       },
       {
         path: "/service",
