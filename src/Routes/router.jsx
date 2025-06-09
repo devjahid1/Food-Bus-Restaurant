@@ -10,6 +10,7 @@ import Thaidish from "../components/Thaidish";
 import RiceDish from "../components/RiceDish";
 import ContactForm from "../components/ContactForm";
 import Management from "../pages/Management";
+import Gallery from "../pages/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element:<ContactForm/>
+      },
+      {
+        path: "/gallery",
+        element:<Gallery/>
       }
     ],
   },
