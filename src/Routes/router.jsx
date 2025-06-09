@@ -9,6 +9,7 @@ import Mdishes from "../components/Mdishes";
 import Fastfood from "../components/Fastfood";
 import Thaidish from "../components/Thaidish";
 import RiceDish from "../components/RiceDish";
+import ContactForm from "../components/ContactForm";
 import Management from "../pages/Management";
 
 const router = createBrowserRouter([
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
         path: "/management",
         element: <Management/>,
       },
+      {
+        path: "/contact",
+        element:<ContactForm/>
+      }
     ],
   },
 ]);
