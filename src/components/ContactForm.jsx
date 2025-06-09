@@ -58,7 +58,7 @@ const ContactForm = () => {
       <div className="w-full max-w-[1440px] flex flex-col lg:flex-row items-center lg:justify-center">
         <div className="p-6 bg-white mt-10">
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
-            <div className="lg:flex gap-2">
+            <div className="flex gap-2">
               <input
                 type="text"
                 name="user_name"
