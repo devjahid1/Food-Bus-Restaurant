@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Nav from '../components/Nav'
 
 const Abouts = () => {
@@ -20,9 +21,9 @@ const Abouts = () => {
           </p>
 
           <div className="py-[8px] px-[10px] pt-14 lg:pt-[61px]">
-            <button className="py-[25px] px-[20px] btn  bg-[#E30814] text-white border-none shadow-none hover:bg-white hover:text-black text-[20px] font-plusjakarta">
+            <NavLink to='/contact' className="py-[25px] px-[20px] btn  bg-[#E30814] text-white border-none shadow-none hover:bg-white hover:text-black text-[20px] font-plusjakarta">
               Book Now
-            </button>
+            </NavLink>
           </div>
         </div>
       </section>
