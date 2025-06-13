@@ -61,7 +61,7 @@ const Footer = () => {
   <p className="text-sm text-white text-center pb-3">
     &copy; {new Date().getFullYear()} All rights reserved. Developed by{" "}
     <a
-      href="https://www.linkedin.com/in/mdjahidmiah/"
+      href="https://jahid.me"
       target="_blank"
       rel="noopener noreferrer"
       className="font-semibold hover:text-blue-400 transition-colors"
