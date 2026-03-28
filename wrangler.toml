@@ -1,4 +1,4 @@
-name = "food-bus"
+name = "food"
 account_id = "67c670c955078ef0b99bb0e55a18c057"
 workers_dev = true
 compatibility_date = "2025-06-05"
